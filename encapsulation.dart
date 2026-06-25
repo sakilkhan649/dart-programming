@@ -1,4 +1,3 @@
-
 /*
 class BankAccount{
   int _balance = 0; // Private variable
@@ -20,24 +19,25 @@ void main(){
   account1.updateBalance = -500; // This will trigger the error message
 }
 */
-class Employee{
-
+class Employee {
   int _salary;
   String name;
 
-Employee(this.name): _salary = 0; // Initialize salary to 0
-  set updateSalary(int amount){
-    if(amount >=5000){
+  Employee(this.name) : _salary = 0; // Initialize salary to 0
+  set updateSalary(int amount) {
+    if (amount >= 5000) {
       _salary = amount;
-    }else{
+    } else {
       print("Error: Invalid salary. Please enter a salary of at least 5000.");
     }
   }
-  int get viewSalary{
+
+  int get viewSalary {
     return _salary;
   }
 }
-void main(){
+
+void main() {
   Employee emp1 = Employee("John");
   emp1.updateSalary = 6000; // Update salary using setter
   print("Employee Name: ${emp1.name}, Salary: ${emp1.viewSalary}");
