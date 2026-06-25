@@ -45,7 +45,6 @@ class Smartphone{
   }
 }
 void main(){
-  Smartphone s1 = Smartphone(brand: "Samsung",price: 30000);
+  Smartphone s1 = Smartphone(brand: "Samsung",price: 50000);
   s1.display();
-  
 }
